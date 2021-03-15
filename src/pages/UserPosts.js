@@ -31,9 +31,9 @@ function UserPosts() {
                         <Transition.Group>
                             {posts && posts.map(post => {
                                 if(post.username === user.username){
-                                return <Grid.Column key={post.id} width={12}>
+                                return (<Grid.Column key={post.id} width={12}>
                                     <ArticleCard post={post} /><br />
-                                </Grid.Column>
+                                </Grid.Column>);
                                 }
                             })}
                         </Transition.Group>
