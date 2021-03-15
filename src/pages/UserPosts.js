@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Button, Grid, Header, Transition } from 'semantic-ui-react';
-import { useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/react-hooks';
 
 
 import { FETCH_POSTS_QUERY } from '../util/graphql';
